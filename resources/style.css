@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ascharge;
+    margin-bottom: 4pt;
+    margin-left: 0%;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+body {
+    background-color: lavender;
+}
+
+p, a {
+    font-family: Revoma;
+    font-size: 20px;
+    margin-left: 10%;
+    margin: 0pt;
+}
+
+@font-face {
+    font-family: BigSpace;
+    src: url('font/BigSpace.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Revoma";
+    src: url('font/Revoma.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ascharge";
+    src: url('font/Ascharge.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
