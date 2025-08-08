@@ -48,10 +48,19 @@ footer {
     position-anchor: bottom;
     position: relative;
     bottom: 0;
+    text-align: center; 
+    background-color: #211951; 
+    border-radius: 20px; 
+    padding: 5px; 
+    margin: auto; 
+    width: 98%;
 }
 
 body {
-    background-color: #211951;
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0.8px;
     margin-right: 5%;
     margin-left: 5%;
