@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="resources/style.css">
     <script src="https://pyscript.net/latest/core.js"></script>
 </head>
-<body>
+<body style="zoom: 80%;">
     <script type="text/javascript">
         function displayText(text) {
             const textElement = document.getElementById('variable')
@@ -17,7 +17,8 @@
         const illusionElement = document.getElementById('illusion');
     </script>
     <header>
-        <a href="index.html"><img src="resources/img/prism.ico" style="position: absolute; top: 4%; left: auto;" alt="Freedom Image" width="256" height="256" loading="eager" align="left"></a>
+        <a href="index.html"><img src="resources/img/prism.ico" style="position: absolute; top: 8%; left: 0 auto;" alt="Freedom Image" loading="eager"></a>
+        <a href="https://www.github.com/Oncomito" target="_blank"><img src="resources/img/idk.gif" style="position: absolute; top: 8%; right: 5%; border-radius: 20px;" alt="Oncomito" loading="eager"></a>
         <span class="center-content">
             <h1 style="margin: auto;">Freedom</h1>
             <p style="text-align: center;">Freedom, Imprisonment,<br> it's all an <mark style="background-color: aliceblue;">illusion</mark></p>
@@ -26,7 +27,7 @@
     </header>
     <main>
         <article>
-            <h2 style="margin-top: 0 auto;">About Freedom</h2>
+            <h2 style="margin-top: 0;">About Freedom</h2>
             <p>True freedom is not found in a place without walls, but in the space between your thoughts—the stillness where you can choose which chains to break. It's the wild grace of living in your own rhythm, unbound by the world's song. It's the quiet courage to be, simply, yourself.</p>
             <a href="mailto:adam.mfadam@gmail.com" style="color:aquamarine">Send help</a>
         </article>
@@ -34,14 +35,17 @@
         <section>
             <h2 id="illusion">Freedom is an illusion.</h2>
             <p>The following image is <strong style="letter-spacing: 2px;">the proof</strong>.</p>
-            <button onclick="displayText('The life has been compromised.'); illusionElement.textContent = 'Freedom is not an illusion';" style="background-color: transparent; border: none; cursor: pointer; display: block; margin: 0 auto; width:fit-content;">
-                <img src="resources/img/Cat.gif" alt="The conqueror of liberation." style="display: block; margin: 0 auto; width: 10%; height: 10%;">
-            </button>
+            <img src="resources/img/Cat.gif" alt="The conqueror of liberation." style="display: block; margin: 0 auto; width: 10%; height: 10%; border-radius: 20px;" usemap="#trueFreedom">
+            <map name="trueFreedom">
+                <area shape="circle" coords="65,65,12" href="resources/deepmessages.html" alt="Click for the truth" onclick="displayText('The life is compromised');">
+            </map>
             <p>Even the cat, a symbol of freedom, is bound by its own nature. It roams freely, yet it is still a prisoner of its instincts and environment. This is the paradox of freedom: we are all bound by something, whether it be our thoughts, our circumstances, or our very nature.</p>
         </section>
     </main>
-    <footer>
+    <footer style="text-align: center; background-color: slateblue; border-radius: 20px; padding: 5px; margin: auto; width: 98%;">
         <hr style="border: 0.5px; color: #15F5BA;">
-        <p id="variable" style="font-size: xx-small; justify-self: center; background-color: transparent;">The clock is ticking.</p>
+        <p id="variable" style="font-size: small; justify-self: center; text-align: center; background-color: transparent;">The clock is ticking.<br>Don't ever let the right eye catch your glimpse.</p>
+        <script>
+        </script>
     </footer>
 </body>
