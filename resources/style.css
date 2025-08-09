@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 500%;
+    font-size: 5vw;
     text-align: center;
 }
 
@@ -28,12 +28,12 @@ header img {
 }
 
 main {
-    text-align: center; background-color: #836FFF; border-radius: 20px; padding: 20px; margin: 20px auto; width: 98%;
+    text-align: center; background-color: #836FFF; border-radius: 20px; padding: 20px; margin: 20px auto; width: 100% - 1%; justify-content: center; align-items: center; display: flex; flex-direction: column; 
 }
 
 header {
     background-color: #15F5BA;
-    width: 100%;
+    width: 100% - 1%;
     margin: 0 auto;
     padding: 10px;
     height: max-content;
@@ -75,6 +75,11 @@ p, a {
 
 p {
     color: white;
+}
+
+hr {
+    width: 100%;
+    display: block;
 }
 
 @font-face {
