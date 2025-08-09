@@ -6,12 +6,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 500%;
     text-align: center;
 }
 
 h2 {
-    font-size: 2.5vw;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ body {
 
 p, a {
     font-family: Revoma;
-    font-size: 1.3vw;
+    font-size: 20px;
     margin: 5px;
 }
 
