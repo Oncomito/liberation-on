@@ -5,6 +5,22 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
 }
 
+@layer base, logo;
+
+@layer base {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@layer logo {
+    .logo {
+        display: inline-flex;
+    }
+}
+
 h1 {
     font-size: 80px;
     text-align: center;
