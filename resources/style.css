@@ -99,6 +99,10 @@ hr {
     display: block;
 }
 
+i {
+    margin-bottom: 0 auto;
+}
+
 @font-face {
     font-family: BigSpace;
     src: url('font/BigSpace.ttf') format('truetype');
