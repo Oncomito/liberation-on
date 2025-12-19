@@ -37,6 +37,12 @@ h2 {
   text-align: center; /* This will center the text inside the div */
 }
 
+#introducing p {
+    text-align: center;
+    margin: 1px;
+    color: white;
+}
+
 header img {
     width: 64px;
     height: 64px;
