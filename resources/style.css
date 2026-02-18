@@ -219,6 +219,11 @@ li {
     margin: 0;
     font-family: Openspace;
 }
+li a {
+    font-size: 1.5rem;
+    font-family: Openspace;
+    color: white
+}
 li:hover {
     background-color: #15f5ba;
     color: #211951;
