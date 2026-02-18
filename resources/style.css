@@ -1,35 +1,41 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: Ascharge;
-    margin: 20px;
-    color: white;
-    letter-spacing: 2px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Openspace;
+  margin: 20px;
+  color: white;
+  letter-spacing: 2px;
 }
 
 @layer base, logo;
 
 @layer base {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @layer logo {
-    .logo {
-        display: inline-flex;
-    }
+  .logo {
+    display: inline-flex;
+  }
 }
 
 h1 {
-    font-size: 80px;
-    text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
 h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 5px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
 
 .center-content {
@@ -37,95 +43,225 @@ h2 {
   text-align: center; /* This will center the text inside the div */
 }
 
-#introducing p {
-    text-align: center;
-    margin: 1px;
-    color: white;
+#img {
+  width: 100%;
+  grid-area: image;
+  text-align: center;
 }
 
-header img {
-    width: 64px;
-    height: 64px;
-    display: inline-flex;
-    margin-right: 0% auto; /* Add some space between the image and the text */
+#img img {
+  width: 10rem;
+  height: auto;
+  border-radius: 20px;
 }
 
-main {
-    text-align: center; background-color: #836FFF; border-radius: 20px; padding: 20px; margin: 20px auto; width: 100% - 1%; justify-content: center; align-items: center; display: flex; flex-direction: column; 
-}
-
-header {
-    background-color: #15F5BA;
-    width: 100% - 1%;
-    margin: 0 auto;
-    padding: 10px;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title title" "text image";
     align-items: center;
-    border-radius: 50px;
+    column-gap: 10px;
+    
 }
 
+#stuffs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title title" "text image";
+    align-items: center;
+    column-gap: 10px;
+}
+
+#stuffs .title {
+    grid-area: title;
+}
+
+#stuffs .txt {
+    grid-area: text;
+}
+
+#stuffs .txt p {
+    text-align: justify;
+}
+
+#about-me .title {
+  grid-area: title;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+#about-me .txt {
+    grid-area: text;
+}
+
+#about-me #img {
+    grid-area: image;
+}
+#introducing {
+    padding-right: 10rem;
+}
+#introducing p {
+  text-align: justify;
+  color: white;
+}
+header img {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  margin-right: 10px; /* Add some space between the image and the text */
+  align-items: center;
+}
+main {
+  text-align: center;
+  background-color: #836fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 99%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "section navbar" "article navbar";
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr auto;
+}
+header {
+  background-color: #15f5ba;
+  width: 99%;
+  margin: 0 auto;
+  padding: 10px;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+}
+.title {
+  border-radius: inherit;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslateblue;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 5px auto;
+}
 footer {
-    justify-content: baseline;
-    position-anchor: bottom;
-    position: relative;
-    bottom: 0;
-    text-align: center; 
-    background-color: #211951; 
-    border-radius: 20px; 
-    padding: 5px; 
-    margin: auto; 
-    width: 99%;
+  justify-content: baseline;
+  position-anchor: bottom;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: #211951;
+  border-radius: 20px;
+  padding: 5px;
+  margin: auto;
+  width: 99%;
 }
-
 body {
-    background-image: url('img/background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0.8px;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 1%;
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0.8px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1%;
 }
-
-p, a {
-    font-family: Revoma;
-    font-size: 20px;
-    margin: 5px;
+section {
+    grid-area: section;
 }
-
-p {
-    color: white;
+article {
+    grid-area: article;
+}
+article,
+section,
+nav {
+  background-color: rgb(95, 79, 196);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+nav {
+    grid-area: navbar;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+}
+ol {
+    background-color: #211951;
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+p,
+a {
+  font-family: Revoma;
+  font-size: 20px;
+  margin: 5px;
+}
+li {
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin: 0;
+    font-family: Openspace;
+}
+li:hover {
+    background-color: #15f5ba;
+    color: #211951;
+    transform: scale(1.05);
+}
+li, p {
+  color: white;
 }
 
 hr {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 i {
-    margin-bottom: 0 auto;
+  margin-bottom: 0 auto;
 }
 
 @font-face {
-    font-family: BigSpace;
-    src: url('font/BigSpace.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: BigSpace;
+  src: url("font/BigSpace.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Revoma";
-    src: url('font/Revoma.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Revoma";
+  src: url("font/Revoma.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Ascharge";
-    src: url('font/Ascharge.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Ascharge";
+  src: url("font/Ascharge.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Openspace";
+  src: url("font/OpenspaceRegular.otf");
+  font-weight: normal;
+  font-style: normal;
 }

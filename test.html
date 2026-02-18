@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-areas: "main navbar" "section navbar" "article navbar";
+  background-color: dodgerblue;
+  padding: 10px;
+  gap: 5px;
+}
+.container div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.main {
+    grid-area: main;
+}
+.navbar {
+    grid-area: navbar;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="main">1</div>
+  <div class="navbar">2</div>
+  <div class="section">3</div>
+  <div class="article">3</div>
+</div>
+
+</body>
+</html>
