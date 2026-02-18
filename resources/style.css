@@ -56,32 +56,31 @@ h2 {
 }
 
 #about-me {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "title title" "text image";
-    align-items: center;
-    column-gap: 10px;
-    
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title title" "text image";
+  align-items: center;
+  column-gap: 10px;
 }
 
 #stuffs {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "title title" "text image";
-    align-items: center;
-    column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title title" "text image";
+  align-items: center;
+  column-gap: 10px;
 }
 
 #stuffs .title {
-    grid-area: title;
+  grid-area: title;
 }
 
 #stuffs .txt {
-    grid-area: text;
+  grid-area: text;
 }
 
 #stuffs .txt p {
-    text-align: justify;
+  text-align: justify;
 }
 
 #about-me .title {
@@ -91,14 +90,14 @@ h2 {
 }
 
 #about-me .txt {
-    grid-area: text;
+  grid-area: text;
 }
 
 #about-me #img {
-    grid-area: image;
+  grid-area: image;
 }
 #introducing {
-    padding-right: 10rem;
+  padding-right: 10rem;
 }
 #introducing p {
   text-align: justify;
@@ -120,7 +119,7 @@ main {
   width: 99%;
   align-items: center;
   display: grid;
-  grid-template-areas: "section navbar" "article navbar";
+  grid-template-areas: "section navbar" "article navbar" "waifu navbar";
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
 }
@@ -169,13 +168,14 @@ body {
   margin-top: 1%;
 }
 section {
-    grid-area: section;
+  grid-area: section;
 }
 article {
-    grid-area: article;
+  grid-area: article;
 }
 article,
 section,
+.waifu,
 nav {
   background-color: rgb(95, 79, 196);
   border-radius: 20px;
@@ -183,24 +183,42 @@ nav {
   padding: 2rem 2rem 1.5rem 2rem;
 }
 nav {
-    grid-area: navbar;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    width: 100%;
+  grid-area: navbar;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+.navico {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.navico img {
+  width: 5rem;
 }
 ol {
-    background-color: #211951;
-    width: 100%;
-    list-style: none;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    height: 100%;
+  background-color: #211951;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+}
+.waifu {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  grid-area: waifu;
+}
+.waifu img {
+  width: 100%;
 }
 p,
 a {
@@ -209,27 +227,28 @@ a {
   margin: 5px;
 }
 li {
-    font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3 ease;
-    margin: 0;
-    font-family: Openspace;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3 ease;
+  margin: 0;
+  font-family: Openspace;
 }
 li a {
-    font-size: 1.5rem;
-    font-family: Openspace;
-    color: white
+  font-size: 1.5rem;
+  font-family: Openspace;
+  color: white;
 }
 li:hover {
-    background-color: #15f5ba;
-    color: #211951;
-    transform: scale(1.05);
+  background-color: #15f5ba;
+  color: #211951;
+  transform: scale(1.05);
 }
-li, p {
+li,
+p {
   color: white;
 }
 
