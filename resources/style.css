@@ -118,11 +118,10 @@ main {
   padding: 20px;
   margin: 20px auto;
   width: 99%;
-  justify-content: center;
   align-items: center;
   display: grid;
   grid-template-areas: "section navbar" "article navbar";
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
 }
 header {
