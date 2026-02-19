@@ -27,12 +27,12 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 3.8rem;
   text-align: center;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 5px;
   margin-top: 0px;
@@ -92,12 +92,15 @@ h2 {
 #about-me .txt {
   grid-area: text;
 }
-
+.img {
+  background-color: #836fff;
+  padding: 0.625rem;
+  padding-top: 1.2rem;
+  border-radius: 1.2rem;
+  margin-left: 1.2rem;
+}
 #about-me #img {
   grid-area: image;
-}
-#introducing {
-  padding-right: 10rem;
 }
 #introducing p {
   text-align: justify;
@@ -175,7 +178,7 @@ article {
 }
 article,
 section,
-.waifu,
+#waifu,
 nav {
   background-color: rgb(95, 79, 196);
   border-radius: 20px;
@@ -210,20 +213,29 @@ ol {
   gap: 15px;
   flex-grow: 1;
 }
-.waifu {
+#waifu {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  gap: 1rem;
+  /* grid-auto-rows: 100px; */
+  grid-template-columns: 1 repeat(3, auto);
   grid-area: waifu;
 }
-.waifu img {
+#waifu .gallery {
+  display: grid;
+  grid: repeat(2, auto) / repeat(3, auto);
+  gap: 0.2rem;
+}
+#waifu .gallery img {
+  align-self: center;
+  justify-self: center;
   width: 100%;
+}
+#waifu .title {
+  margin-bottom: 1rem;
 }
 p,
 a {
   font-family: Revoma;
-  font-size: 20px;
+  font-size: 2rem;
   margin: 5px;
 }
 li {
