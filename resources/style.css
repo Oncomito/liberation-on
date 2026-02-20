@@ -1,3 +1,13 @@
+@media (max-width: 700px) {
+  #about-me {
+    grid-template-areas:
+      "title"
+      "image"
+      "text";
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
 h1,
 h2,
 h3,
@@ -117,7 +127,7 @@ main {
   text-align: center;
   background-color: #836fff;
   border-radius: 20px;
-  padding: 20px;
+  padding: 1rem;
   margin: 20px auto;
   width: 99%;
   align-items: center;
@@ -187,7 +197,7 @@ nav {
 }
 nav {
   grid-area: navbar;
-  padding: 20px;
+  padding: 1rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -235,11 +245,11 @@ ol {
 p,
 a {
   font-family: Revoma;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 5px;
 }
 li {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
   border-radius: 10px;
@@ -250,7 +260,7 @@ li {
   font-family: Openspace;
 }
 li a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: Openspace;
   color: white;
 }
